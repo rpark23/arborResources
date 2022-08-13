@@ -1,116 +1,239 @@
 .container {
-  padding: 0 2rem;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container > div {
+  scroll-snap-align: center;
+}
+
+.welcome {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  height: 100vh;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.title {
+  margin-top: 15vh;
+  margin-bottom: 3vh;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.title h2 {
+  font-size: 2.5rem;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.title h1 {
+  color: #B83A4B;
+  font-size: 3.5rem;
+  
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.title a {
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.title h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.view {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.view form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  height: 1em;
+.description0 {
+  margin-bottom: 1.5vh;
+}
+
+.description1 {
+  margin-bottom: 1vh;
+}
+
+.description2 {
+  margin: 1vh 0 1vh;
+}
+
+.description3 {
+  margin: 2vh 0 1vh;
+  width: 34rem;
+}
+
+.next {
+  background-color: #B83A4B;
+  margin-top: 2.5vh;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 7rem;
+}
+
+.next {
+  border-style: solid;
+}
+
+.next:hover {
+  background-color: #8C1515;
+}
+
+.next p {
+  margin-top: 0.1rem;
+}
+
+.next .right {
+  margin-left: 0.2rem;
+  margin-right: -0.4rem;
+}
+
+
+.left {
+  background-color: #D5D5D4;
+  color: black;
+  font-size: 1rem;
+  margin-top: 2.5vh;
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 4rem; 
+}
+
+.left:hover {
+  background-color: #C0C0BF;
+}
+
+.countyLanguage {
+  margin-top: 20vh;
+}
+
+.radioGroup {
+  width: 8rem;
+}
+
+.referrals {
+  margin-top: 15vh;
+}
+
+.referral {
+  margin-top: 1vh;
+}
+
+.map {
+  border-style: none;
+  margin-top: 2vh;
+  height: 40vh;
+  width: 30vw;
+}
+
+.goodrx {
+  color: #B83A4B;
+  margin-top: 1vh;
+  text-decoration: none;
+}
+
+.goodrx:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.goodrxURL {
+  margin-top: 1vh;
+  width: 25rem;
+}
+
+.medication {
+  align-items: center;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.medication img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.toContinue {
+  font-size: 0.9rem;
+  margin-top: 1vh;
+}
+
+.avs {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin-top: 10vh;
+}
+
+.avs .quill {
+  max-height: 60vh;
+  width: 50vw;
+  margin-bottom: 5vh;
+}
+
+.forms h2 {
+  font-size: 2rem;
+  margin-top: 12vh;
+}
+
+.forms .medwiki {
+  align-items: center;
+  display: flex;
+  margin-top: 2vh;
+}
+
+.forms .medwiki a {
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.forms .referralForms {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  max-width: 30rem;
+}
+
+.forms .referralForms span {
+  color: red;
+}
+
+.emr {
+  margin-top: 12vh;
+}
+
+.emr .quill {
+  margin-top: 2vh;
+}
+
+.emr .congratulations {
+  margin-top: 3vh;
+}
+
+.emr .congratulations p {
+  margin-top: 0.25rem;
+}
+
+.footer {
+  background-color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5vh 3vh;
+  position: absolute;
+  width: 100%;
 }

@@ -1,0 +1,25 @@
+[
+  {
+    "Ravenswood": {
+      "medwiki": "https://medwiki.stanford.edu/display/cfc/Ravenswood+Family+Health+Network",
+      "forms": ["/forms/Arbor_Ravenswood_Cover_Sheet.pdf"]
+    },
+    "NEMS": {
+      "medwiki": "https://medwiki.stanford.edu/display/cfc/North+East+Medical+Services",
+      "forms": ["/forms/Arbor_NEMS_Cover_Sheet.pdf"],
+      "handouts": []
+    },
+    "Gardner": {
+      "medwiki": "https://medwiki.stanford.edu/display/cfc/Gardner+Family+Health+Network",
+      "forms": ["/forms/Release_of_Health Information.pdf"],
+      "handouts": []
+    },
+    "Samaritan House": {
+      "medwiki": "https://medwiki.stanford.edu/display/cfc/Samaritan+House+Free+Clinics",
+      "forms": ["/forms/Arbor_Samaritan_House_Cover_Sheet.pdf"]
+    },
+    "AHS": {
+      "medwiki": "https://medwiki.stanford.edu/display/cfc/Alameda+Health+System+%28AHS%29%2C+including+Highland+Hospital"
+    }
+  }
+]
