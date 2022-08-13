@@ -44,7 +44,7 @@ export default function Medications(props) {
       <p className={styles.description1}>
         We recommend you obtain coupons for your medications using:
       </p>
-      <a className={styles.goodrx} href="https://www.goodrx.com/" target="_blank"><h2>GoodRx</h2></a>
+      <a className={styles.goodrx} href="https://www.goodrx.com/" target="_blank" rel="noreferrer"><h2>GoodRx</h2></a>
       <p className={styles.description3}>
         *Remember to select the correct <strong>type</strong>, <strong>quantity</strong>, and <strong>dosage strength</strong>{' '}
         as the prescription written by your provider.

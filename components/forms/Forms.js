@@ -19,8 +19,8 @@ export default function Forms(props) {
           <div className={styles.medwiki}><h3>{pcp}</h3><a href={links[0][pcp].medwiki}>Medwiki</a></div>
           {links[0][pcp].forms ?
             <ul className={styles.referralForms}>
-              {links[0][pcp].forms.map((form) =>
-                <li><a href={form} download={form.slice(7)}>{form.slice(7)}</a></li>
+              {links[0][pcp].forms.map((form, i) =>
+                <li key={i}><a href={form} download={form.slice(7)}>{form.slice(7)}</a></li>
               )}
             </ul> : 
             <ul className={styles.referralForms}>
