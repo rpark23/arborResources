@@ -78,19 +78,15 @@
 }
 
 .next {
-  background-color: #B83A4B;
-  margin-top: 2.5vh;
-  font-size: 1rem;
+  background-color: #B83A4B !important;
+  margin-top: 2.5vh !important;
+  font-size: 1rem !important;
   height: 2.5rem;
   width: 7rem;
 }
 
-.next {
-  border-style: solid;
-}
-
 .next:hover {
-  background-color: #8C1515;
+  background-color: #8C1515 !important;
 }
 
 .next p {
@@ -104,17 +100,17 @@
 
 
 .left {
-  background-color: #D5D5D4;
-  color: black;
-  font-size: 1rem;
-  margin-top: 2.5vh;
-  margin-right: 1rem;
+  background-color: #D5D5D4 !important;
+  color: black !important;
+  font-size: 1rem !important;
+  margin-top: 2.5vh !important;
+  margin-right: 1rem !important;
   height: 2.5rem;
   width: 4rem; 
 }
 
 .left:hover {
-  background-color: #C0C0BF;
+  background-color: #C0C0BF !important;
 }
 
 .countyLanguage {
