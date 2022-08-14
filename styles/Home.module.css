@@ -247,8 +247,8 @@
   max-width: 30rem;
 }
 
-@media (max-width: 32rem) {
-  .forms .referralForms {
+@media (max-width: 35rem) {
+  .forms {
     width: 95vw;
   }
 }
@@ -258,6 +258,9 @@
 }
 
 .emr {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-top: -15vh;
 }
 
@@ -265,19 +268,24 @@
   margin-top: 2vh;
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 35rem) {
   .emr .quill {
     width: 95vw;
   }
 }
 
-
 .emr .congratulations {
-  margin-top: 3vh;
+  margin-top: 5rem;
 }
 
 .emr .congratulations p {
   margin-top: 0.25rem;
+}
+
+@media (max-width: 35rem) {
+  .emr .congratulations p  {
+    width: 95vw;
+  }
 }
 
 .footer {
