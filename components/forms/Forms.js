@@ -49,7 +49,7 @@ export default function Forms(props) {
         <div>
           <div className={styles.medwiki}><h3>Medications</h3></div>
           <ul className={styles.referralForms}>
-            <li>No forms required for B2C, but please remember to <span><strong><u>choose a specific pharmacy location</u></strong></span>{' '}
+            <li>No forms required for B2C, but please remember to <span className={styles.red}><strong><u>choose a specific pharmacy location</u></strong></span>{' '}
               (with your patient) and notify your B2C chair or manager.</li>
           </ul>
         </div> : null

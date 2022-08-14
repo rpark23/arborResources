@@ -50,7 +50,7 @@ export default function Medications(props) {
         as the prescription written by your provider.
       </p>
       <p className={styles.description3}>
-        When you are done, paste the coupon URL below:
+        When you are done, paste the <span className={styles.red}><strong><u>coupon URL</u></strong></span> (from a selected pharmacy) below:
       </p>
       <form onSubmit={(e) => getMedications(e, medication, value)}>
         <TextField className={styles.goodrxURL} value={value} onChange={onChange} label="GoodRx Coupon URL"/>

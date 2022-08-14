@@ -13,7 +13,7 @@ export default function Imaging(props) {
     <div className={styles.view}>
       <h3>Imaging</h3>
       <p className={styles.description3}>
-        Check the types of imaging your healthcare provider has ordered for you:
+        Which types of imaging were ordered for you?
       </p>
       <form onSubmit={(e) => selectImaging(e)}>
         <input hidden value="Stanford Hospital – Radiology Registration" />
