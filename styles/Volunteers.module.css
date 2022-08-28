@@ -1,0 +1,79 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.flowDiagram img {
+  max-height: 99vh;
+  max-width: 99vw;
+}
+
+.letterBackground {
+  align-items: center;
+  background-color: #B83A4B;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+
+  padding-bottom: 5vh;
+}
+
+.letter {
+  margin-top: 5vh;
+  padding: 2rem;
+
+  width: 60vw;
+}
+
+.accordian {
+  margin-top: 0.5rem;
+}
+
+.letter .accordian p {
+  font-size: 0.88rem;
+  line-height: 1.12rem;
+}
+
+.letter .roles,
+.letter .training,
+.letter .required {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88rem;
+  line-height: 1.12rem;
+  padding: 1rem;
+}
+
+.letter .roles img {
+  margin-top: 1rem;
+  width: 70%;
+}
+
+.letter .flow {
+  align-items: center;
+  display: flex;
+}
+
+.letter .flow img {
+  width: 95%;
+}
+
+.letter .flow .arrow {
+  cursor: pointer;
+}
+
+.letter .flow .grey {
+  color: #ddd;
+}
+
+.letter a {
+  color: #4F93C7;
+  cursor: pointer;
+}
+
+.training a {
+  color: #B83A4B;
+}

@@ -19,6 +19,7 @@ export default function SelectReferrals(props) {
           <FormControlLabel control={<Checkbox sx={{ p: 0.5, '&.Mui-checked': {color: '#B83A4B'} }}/>} label="Labs" />
           <FormControlLabel control={<Checkbox sx={{ p: 0.5, '&.Mui-checked': {color: '#B83A4B'} }}/>} label="Imaging" />
           <FormControlLabel control={<Checkbox sx={{ p: 0.5, '&.Mui-checked': {color: '#B83A4B'} }}/>} label="Medications" />
+          {/* <FormControlLabel control={<Checkbox sx={{ p: 0.5, '&.Mui-checked': {color: '#B83A4B'} }}/>} label="Health Education" /> */}
           {/*<FormControlLabel control={<Checkbox sx={{ p: 0.5, '&.Mui-checked': {color: '#B83A4B'} }}/>} label="Specialty Care" />*/}
           {/*<FormControlLabel control={<Checkbox sx={{ p: 0.5, '&.Mui-checked': {color: '#B83A4B'} }}/>} label="Social Needs" />*/}
         </FormGroup>

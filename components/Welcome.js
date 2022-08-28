@@ -6,6 +6,7 @@ import PrimaryCare from './views/PrimaryCare'
 import Labs from './views/Labs'
 import Imaging from './views/Imaging'
 import Medications from './views/Medications'
+import HealthEd from './views/HealthEd'
 import AVS from './avs/AVS'
 import Forms from './forms/Forms'
 import EMR from './views/EMR_note'
@@ -181,6 +182,7 @@ export default function Welcome() {
           {screens[screen] == 1 ? <Labs selectLabs={selectLabs} prevScreen={prevScreen} nextScreen={nextScreen}/> : null}
           {screens[screen] == 2 ? <Imaging selectImaging={selectImaging} prevScreen={prevScreen} /> : null}
           {screens[screen] == 3 ? <Medications getMedications={getMedications} prevScreen={prevScreen}/> : null}
+          {screens[screen] == 4 ? <HealthEd selectResources={nextScreen} prevScreen={prevScreen}/> : null}
         </div> : null
       }
       {view == 3 ? <AVS referrals={referrals} prevView={prevView} nextScreen={nextScreen} /> : null}
