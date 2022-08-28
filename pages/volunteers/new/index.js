@@ -166,7 +166,7 @@ export default function Volunteers() {
             <p>
               &emsp; To acknowledge that you have reviewed our new workflow, please sign up for your fall shifts on the{' '}
               <strong><a href="https://docs.google.com/spreadsheets/d/1UzrjWoiBUE6N7N2JmylI95hB_qLn6CQK0V60xUsX3S4/edit#gid=918942208" target="_blank" rel="noreferrer">Arbor Volunteer Schedule</a></strong>,
-              which includes a column for our Fall All Hands. To ensure you are scheduled, <strong>please mark at least 2 "Available" 
+              which includes a column for our Fall All Hands. To ensure you are scheduled, <strong>please mark at least 2 &quot;Available&quot; 
               dates between every set of black bars.</strong>
             </p>
           </div>

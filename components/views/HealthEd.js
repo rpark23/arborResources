@@ -58,7 +58,7 @@ export default function HealthEd(props) {
           } */}
         </FormGroup>
         <p className={styles.description3}>
-          *If you are unable to find the resources you are looking for, please search Stanford's <a href="https://www.healthwise.net/stanford/find/search.aspx" target="_blank" >HealthWise Knowledgebase</a>.
+          *If you are unable to find the resources you are looking for, please search Stanford&apos;s <a href="https://www.healthwise.net/stanford/find/search.aspx" target="_blank" rel="noreferrer">HealthWise Knowledgebase</a>.
         </p>
         <div className={styles.control}>
           {/* <Button variant="contained" className={styles.left} onClick={prevScreen}><ArrowBackIcon/></Button> */}
