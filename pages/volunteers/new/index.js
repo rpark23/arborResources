@@ -80,7 +80,9 @@ export default function Volunteers() {
         <Paper className={styles.letter} elevation={16}>
           <h2>New Arbor Workflow</h2>
           <p>Effective 10/1/2022</p>
-          <br/><br/>
+          <br/>
+          <h4 className={styles.mobile}>* For a better viewing experience, try opening this link on a bigger screen. *</h4>
+          <br/>
           <h3>Motivation</h3>
           <div className={styles.accordian}>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
