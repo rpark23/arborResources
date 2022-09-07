@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../../../styles/Volunteers.module.css'
 //import Welcome from '../components/Welcome'
 
@@ -96,6 +97,16 @@ export default function Volunteers() {
                   specific positions that can leave volunteers with an incomplete picture of clinic, a lack of 
                   experienced volunteers to seek guidance from, and lead to misunderstandings between different roles. 
                 </p>
+                {/* <p>
+                  &emsp; Having MED 181 online has impacted our training process and forced many 
+                  of our volunteers to learn their roles during (shadowing) shifts. Training is also fragmented into 
+                  specific positions that can leave volunteers with:
+                </p>
+                <ul >
+                  <li>An incomplete picture of clinic</li>
+                  <li>Lead to misunderstandings between different roles</li>
+                  <li>A lack of experienced volunteers to seek guidance from</li>
+                </ul> */}
               </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -136,15 +147,20 @@ export default function Volunteers() {
               are eligible to become <strong>Referrals Chairs</strong>, <strong>Front Desk Managers</strong>, 
               or <strong>Preclinical Volunteers</strong>.
             </p>
-            <img src="/images/volunteers/roles.png"></img>
+            <div className={styles.img}>
+              <Image src="/images/volunteers/roles.png" layout="fill" />
+            </div>
           </div>
           <br/>
           <h3>New Clinic Flow</h3>
           <br/>
-          <p>Click on the arrows to walk through our new clinic flow or <a onClick={(e) => endFlow(e)}>jump to the end</a>.</p>
+          <p>&emsp; Click on the arrows to walk through our new clinic flow or <a onClick={(e) => endFlow(e)}>jump to the end</a>.</p>
           <div className={styles.flow}>
             {flow == 1 ? <ArrowBack className={styles.grey}/> : <ArrowBack className={styles.arrow} onClick={(e) => prevFlow(e)} />}
-            <img src={`/images/volunteers/flow/${flow}.png`} />
+            <div className={styles.img}>
+              <Image src={`/images/volunteers/flow/${flow}.png`} layout="fill" priority={true} />
+            </div>
+            {/* <img src={`/images/volunteers/flow/${flow}.png`} /> */}
             {flow == 14 ? <ArrowForward className={styles.grey}/> : <ArrowForward className={styles.arrow} onClick={(e) => nextFlow(e)} />}
           </div>
           <br/>
@@ -158,7 +174,7 @@ export default function Volunteers() {
             <br />
             <p>
               &emsp; The easiest way to fulfill this requirement is to attend our <strong>Fall All Hands</strong> on{' '}
-              <strong>Saturday, October 1 from 10:30am-12pm</strong>. If you have a conflict, please email the managers 
+              <strong>Saturday, October 1 from 10:00am-12:30pm</strong>. If you have a conflict, please email the managers 
               as soon as possible so that we can schedule a 1-on-1 training with you before your next scheduled shift.
             </p>
           </div>
@@ -166,10 +182,11 @@ export default function Volunteers() {
           <h3>*** Action REQUIRED ***</h3>
           <div className={styles.required}>
             <p>
-              &emsp; To acknowledge that you have reviewed our new workflow, please sign up for your fall shifts on the{' '}
+              &emsp; To acknowledge that you have reviewed our new workflow, please sign up for your <strong>fall shifts</strong> on the{' '}
               <strong><a href="https://docs.google.com/spreadsheets/d/1UzrjWoiBUE6N7N2JmylI95hB_qLn6CQK0V60xUsX3S4/edit#gid=918942208" target="_blank" rel="noreferrer">Arbor Volunteer Schedule</a></strong>,
-              which includes a column for our Fall All Hands. To ensure you are scheduled, <strong>please mark at least 2 &quot;Available&quot; 
-              dates between every set of black bars.</strong>
+              which includes a column for our Fall All Hands. To ensure you are scheduled, <u>please mark at least 2 &quot;Available&quot; 
+              dates between every set of black bars</u> <strong>by 9/13</strong>. 
+              <u>Shifts will be assigned on a rolling basis, so sign up as soon as you can!</u>
             </p>
           </div>
         </Paper>
