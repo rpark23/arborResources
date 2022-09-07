@@ -74,7 +74,9 @@ export default function Volunteers() {
     <div className={styles.container}>
       <Head>
         <title>New Clinic Workflow</title>
-        <meta name="description" content="Access affordable care options" />
+        <meta name="description" content="New Arbor Clinic Workflow for all undergraduate volunteers. Changes
+        aim to create an equitable and fulfilling volunteer experience while improving the patient experience.
+        Changes will go into effect on October 1st following our Fall All Hands from 10:00am-12:30pm." />
         <link rel="icon" href="/logo.png" />
       </Head>
       <div className={styles.letterBackground}>
