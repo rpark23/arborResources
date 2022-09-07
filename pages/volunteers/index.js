@@ -76,7 +76,8 @@ export default function Volunteers() {
         <title>New Clinic Workflow</title>
         <meta name="description" content="New Arbor Clinic Workflow for all undergraduate volunteers. Changes
         aim to create an equitable and fulfilling volunteer experience while improving the patient experience.
-        Changes will go into effect on October 1st following our Fall All Hands from 10:00am-12:30pm." />
+        The new workflow will go into effect on October 1st following our Fall All Hands from 10:00am-12:30pm.
+        Read to the bottom of the page to find details for Fall Shift Signups." />
         <link rel="icon" href="/logo.png" />
       </Head>
       <div className={styles.letterBackground}>
