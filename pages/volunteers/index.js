@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Volunteers.module.css'
-//import Welcome from '../components/Welcome'
 
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
@@ -100,16 +99,6 @@ export default function Volunteers() {
                   specific positions that can leave volunteers with an incomplete picture of clinic, a lack of 
                   experienced volunteers to seek guidance from, and lead to misunderstandings between different roles. 
                 </p>
-                {/* <p>
-                  &emsp; Having MED 181 online has impacted our training process and forced many 
-                  of our volunteers to learn their roles during (shadowing) shifts. Training is also fragmented into 
-                  specific positions that can leave volunteers with:
-                </p>
-                <ul >
-                  <li>An incomplete picture of clinic</li>
-                  <li>Lead to misunderstandings between different roles</li>
-                  <li>A lack of experienced volunteers to seek guidance from</li>
-                </ul> */}
               </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -163,7 +152,6 @@ export default function Volunteers() {
             <div className={styles.img}>
               <Image src={`/images/volunteers/flow/${flow}.png`} layout="fill" priority={true} />
             </div>
-            {/* <img src={`/images/volunteers/flow/${flow}.png`} /> */}
             {flow == 8 ? <ArrowForward className={styles.grey}/> : <ArrowForward className={styles.arrow} onClick={(e) => nextFlow(e)} />}
           </div>
           <br/>
